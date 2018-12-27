@@ -31,7 +31,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a73
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a73
@@ -52,9 +52,8 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=2048
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.configfs=true
+BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
-TARGET_PREBUILT_KERNEL := device/xiaomi/sagit/prebuilt/Image.gz-dtb
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8998
@@ -100,3 +99,4 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_MAX_BRIGHTNESS := 4095
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
+TW_USE_TOOLBOX := true
