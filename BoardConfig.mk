@@ -109,3 +109,20 @@ TW_MAX_BRIGHTNESS := 4095
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
 TW_USE_TOOLBOX := true
+
+# Haters gonna hate..
+ALLOW_MISSING_DEPENDENCIES := true
+
+# SHRP flags
+SHRP_PATH := device/xiaomi/sagit
+SHRP_MAINTAINER := wannacry
+SHRP_DEVICE_CODE := sagit
+SHRP_INTERNAL := /sdcard
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_FLASH_MAX_BRIGHTNESS := 200
+SHRP_EDL_MODE := 1
+SHRP_REC_TYPE := Universal
+SHRP_DARK := true
+SHRP_EXPRESS := true
