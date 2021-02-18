@@ -1,13 +1,9 @@
 # android_device_xiaomi_sagit
-Tree for building TWRP for Xiaomi MI 6
+Tree for building SHRP for Xiaomi MI 6
 
 ## To compile
 
-export ALLOW_MISSING_DEPENDENCIES=true
-
-. build/envsetup.sh && lunch omni_sagit-eng
-
-mka adbd recoveryimage
+source build/envsetup.sh; lunch omni_sagit-eng; mka recoveryimage
 
 ## Device specifications
 
